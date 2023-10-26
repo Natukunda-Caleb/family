@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calebs family</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        div.gallery {
+            margin: 5px;
+            border: 2px solid #ccc;
+            float: left;
+            width: 180px;
+            margin-top: 50px;
+            height: 400px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            max-width: 600px;
+        }
+        
+        div.gallery-item img {
+            width: 100%;
+            height: auto;
+        }
+          div.gallery:hover {
+            border: 1px solid #777;
+          }
+          @keyframes gallery {
+            from {background-color: red;}
+            to {background-color: yellow;}
+          }
+          div.gallery img {
+            width: 250px;
+            height: 400px;
+            transition: width 2s height 2s transform 2s;
+            background-color: red;
+            animation-name: none;
+            animation-duration: 4s;
+            border-radius: 50%;
+            float: left;
+            padding: 10px;
+          }
+          
+          div.desc {
+            padding: 15px;
+            text-align: center;
+          }
+          * {
+            box-sizing: border-box;
+          }
+          .responsive {
+            padding: 0 6px;
+            float: left;
+            width: 24.99999%;
+          }
+          li {
+            list-style-type: none;
+          }
+          .dropdown {
+            position: relative;
+            display: contents;
+          }
+          .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: I60px;
+            box-shadow: opx 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+          }
+          .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            display: block;
+            text-decoration: none;
+          }
+          .dropdown:hover .dropdown-content {
+            display: block;
+          }
+          .right {
+            float: right;
+          }
+          .left {
+            float: left;
+          }
+          body {
+            background-color: azure;
+          }  
+    </style>
+</head>
+<body>
+    <header align="center">
+        <h1 style="color:rgb(43, 46, 226)" >FAMILY'S GALLERY</h1>
+    </header>
+    <div class="dropdown"><button class="btn"><i class="fa fa-bars"></a></i> Menu</button>
+        <br>
+          <div class="dropdown-content" >
+            <li><a href="index.html" style="color: black;">HOME PAGE</a></li>
+            <li><a href="profile.html" style="color: blue;">ABOUT US</a></li>
+            <li><a href="gallery.html" style="color: brown;">GALLERY</a></li>
+            <li><a href="contacts.html" >CONTACTS</a></li>
+          </div>
+        </div>
+    <div class="gallery">
+        <img src="caleb.jpg" alt="The Author" width="600" height="400">
+        <a target="_blank" href="caleb.jpg"></a>
+        <div class="desc">The author</div>
+    </div>
+    <div class="gallery">
+        <img src="IMG_20230525_074955.jpg" alt="The Author" width="600" height="400">
+        <a target="_blank" href="IMG_20230525_074955.jpg"></a>
+        <div class="desc">Friends</div>
+    </div>
+    <div class="gallery">
+        <img src="IMG_20230531_174140.jpg" alt="The Author" width="600" height="400">
+        <a target="_blank" href="IMG_20230531_174140.jpg"></a>
+        <div class="desc">leisure time</div>
+    </div>
+    <div class="gallery">
+        <img src="IMG_20230609_141850.jpg" alt="The Author" width="600" height="400">
+        <a target="_blank" href="IMG_20230609_141850.jpg"></a>
+        <div class="desc">Brothers</div>
+    </div>
+    <div class="gallery">
+        <img src="calex.jpg" alt="The Author" width="600" height="400">
+        <a target="_blank" href="calex.jpg"></a>
+        <div class="desc">the one</div>
+    </div>
+
+<footer>
+  <a href="profile.html" style="color: black;"><button class="left"> previous</button></a>
+  <a href="contacts.html" style="color: black;"><button class="right">>next</button></a>
+</footer>
+</body>
+</html>
